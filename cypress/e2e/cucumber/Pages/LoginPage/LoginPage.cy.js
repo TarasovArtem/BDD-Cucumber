@@ -3,18 +3,20 @@
 
 class LoginPage {
     enterURL() {
-        cy.visit();
+        cy.visit('/index.php?route=account/login');
     }
 
-    enterUserNamePassword(username, password) {
-        cy.get('#input-email').type(username);
-        cy.get('#input-password').type(password);
-        return this;
+    enterUserNameEmail(username) {
+        return cy.get('[name="email"]').type(username);
+    }
+
+    enterUserNamePassword(password) {
+        return cy.get('[name="password"]').type(password);
     }
 
     clickSubmitButton() {
-        cy.get('[type="submit"]').eq(0).click();
-        return this;
+        return cy.get('[type="submit"]').eq(0).click();
+    
     }
 
     verifyPageTitle() {

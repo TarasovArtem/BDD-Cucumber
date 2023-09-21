@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:testEnv:open": "cypress open --env configFile=testEnv",
+    "cy:testEnv:chrome": "cypress open --browser chrome --env configFile=testEnv",
+    "cy:testEnv:firefox": "cypress open --browser firefox --env configFile=testEnv",
+    "cy:testEnv:run": "cypress run --env configFile=testEnv"
   },
   "author": "Artem Tarasov",
   "license": "ISC",

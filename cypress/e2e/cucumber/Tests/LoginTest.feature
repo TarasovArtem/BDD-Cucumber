@@ -6,7 +6,7 @@ Given I navigate to the Website
 
 
 Scenario: Login as new sign up user with valid data
-When I etered valid credential
+When I entered valid credential
 | email | validpassword |
 | lambdatest11@yopmail.com | lambdatest21 |
 And User click on sign in button to login

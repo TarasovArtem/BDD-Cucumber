@@ -6,7 +6,7 @@ import login from "../../Pages/LoginPage/LoginPage.cy";
 Given("I navigate to the Website", () => {
     login.enterURL();
 });
-When("I entered valid  credential", (datatable) => {
+When("I entered valid credential", (datatable) => {
     datatable.hashes().forEach((element) => {
         login.enterUserNameEmail(element.email), 
         login.enterUserNamePassword(element.validpassword);
@@ -14,7 +14,7 @@ When("I entered valid  credential", (datatable) => {
     });
 });
 
-And("User click on sign in button", () => {
+And("User click on sign in button to login", () => {
     login.clickSubmitButton();
 });
 

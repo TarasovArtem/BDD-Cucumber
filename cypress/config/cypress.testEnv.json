@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://ecommerce-playground.lambdatest.io",
+    "env": {
+        "environment": "testEnv"
+    },
+    "execTimeout": 300000,
+    "defaultCommandTimeout": 60000,
+    "requestTimeout": 20000,
+    "pageLoadTimeout": 60000,
+    "responseTimeout": 20000,
+    "viewportWidth": 1200,
+    "viewportHeight": 1200,
+    "chromeWebSecurity": false
+}

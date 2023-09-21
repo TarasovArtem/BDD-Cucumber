@@ -8,8 +8,8 @@ Given("I navigate to the Website", () => {
 });
 When("I entered valid credential", (datatable) => {
     datatable.hashes().forEach((element) => {
-        login.enterUserNameEmail(element.email), 
-        login.enterUserNamePassword(element.validpassword);
+        login.enterUserNameEmail(element.email, { log: false }), 
+        login.enterUserNamePassword(element.validpassword, { log: false });
         //login.clickSubmitButton();
     });
 });

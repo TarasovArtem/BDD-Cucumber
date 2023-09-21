@@ -2,9 +2,6 @@
 
 
 class LoginPage {
-    enterURL() {
-        cy.visit('/index.php?route=account/login');
-    }
 
     enterUserNameEmail(username) {
         return cy.get('[name="email"]').type(username);

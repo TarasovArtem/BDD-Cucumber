@@ -2,9 +2,10 @@
 
 import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
 import login from "../../Pages/LoginPage/LoginPage.cy";
+import navigation from "../../Pages/Navigation/Navigation.cy"
 
 Given("I navigate to the Website", () => {
-    login.enterURL();
+    navigation.loginPage();
 });
 When("I entered valid credential", (datatable) => {
     datatable.hashes().forEach((element) => {

@@ -19,3 +19,8 @@ When("I select chosen Product", () => {
 And('I click the "Add to Cart" button', () => {
     productCard.clickBtnAddToCard();
 })
+
+Then("I should see chosen Product in the cart", () => {
+    productCard.clickViewCartBtn('View Cart');
+    productCard.productTitle('Samsung SyncMaster 941BW');
+})

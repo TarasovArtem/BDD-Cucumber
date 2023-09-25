@@ -8,7 +8,7 @@ class Navigation {
         cy.visit('/index.php?route=account/login');
     }
 
-    RegisterPage() {
+    registerPage() {
         cy.visit('/index.php?route=account/register')
     }
 }

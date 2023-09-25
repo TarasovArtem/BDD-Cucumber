@@ -33,4 +33,4 @@ class ProductCard {
 
 }
 const productCard = new ProductCard();
-export default productCard
+export default productCard;
